@@ -104,7 +104,7 @@
 
         function update() {
 
-            //Add da velocidade e da direcao com base na tecla precionada
+            //Add da velocidade e da direcao com base na tecla pressionada
             if(teclado.left.isDown){
                 alien.setVelocityX(-150);
             }
@@ -121,10 +121,10 @@
                 alien.setVelocityY(-150);
                 ativarTurbo();
             }
-            else{ //Quando não for precionada a ceta para cima, o fogo nao aparece embaixo do alien
+            else{ //Quando não for pressionada a ceta para cima, o fogo nao aparece embaixo do alien
                 semTurbo();
             }
-            fogo.setPosition(alien.x, alien.y + alien.height/2); //Set a posição do fogo em relacoa ao alien
+            fogo.setPosition(alien.x, alien.y + alien.height/2); //Set a posição do fogo em relacao ao alien
 
             
         }
